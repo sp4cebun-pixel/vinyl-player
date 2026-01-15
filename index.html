@@ -18,19 +18,20 @@
             align-items: center;
             min-height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            padding: 20px;
+            padding: 10px;
         }
 
         .player-container {
             text-align: center;
-            max-width: 400px;
+            max-width: 300px;
+            width: 100%;
         }
 
         .vinyl-wrapper {
             position: relative;
-            width: 280px;
-            height: 280px;
-            margin: 0 auto 20px;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 15px;
             overflow: visible;
         }
 
@@ -105,8 +106,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 110px;
-            height: 110px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             background: linear-gradient(135deg, #ffc5d4 0%, #ffb8cc 50%, #ffa8c0 100%);
             display: flex;
@@ -121,15 +122,15 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
             background: #1a1a1a;
             box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.8);
         }
 
         .label-text {
-            font-size: 10px;
+            font-size: 7px;
             font-weight: 300;
             color: rgba(255, 255, 255, 0.9);
             text-align: center;
@@ -138,18 +139,18 @@
         }
 
         .label-title {
-            font-size: 11px;
+            font-size: 8px;
             font-weight: 400;
             color: white;
             margin-bottom: 4px;
             text-align: center;
-            padding: 0 10px;
+            padding: 0 8px;
             line-height: 1.2;
         }
 
         .play-pause-btn {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background: rgba(255, 182, 193, 0.9);
             border: none;
@@ -160,7 +161,7 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
             position: absolute;
-            bottom: -25px;
+            bottom: -20px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -172,25 +173,25 @@
         }
 
         .play-pause-btn svg {
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
             fill: white;
         }
 
         .track-info {
-            margin-top: 30px;
+            margin-top: 25px;
         }
 
         .track-title {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             color: #d4939d;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
             letter-spacing: 0.5px;
         }
 
         .track-artist {
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 300;
             color: #c4a4a8;
             letter-spacing: 0.5px;
@@ -198,10 +199,10 @@
 
         .controls {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             justify-content: center;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 12px;
         }
 
         .control-btn {
@@ -210,7 +211,7 @@
             cursor: pointer;
             color: #d4939d;
             transition: all 0.2s ease;
-            padding: 8px;
+            padding: 6px;
         }
 
         .control-btn:hover {
@@ -219,27 +220,27 @@
         }
 
         .control-btn svg {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             fill: currentColor;
         }
 
         .volume-control {
             display: flex;
             align-items: center;
-            gap: 8px;
-            margin-top: 15px;
+            gap: 6px;
+            margin-top: 10px;
             justify-content: center;
         }
 
         .volume-control svg {
-            width: 14px;
-            height: 14px;
+            width: 12px;
+            height: 12px;
             fill: #d4939d;
         }
 
         .volume-slider {
-            width: 100px;
+            width: 80px;
             height: 3px;
             -webkit-appearance: none;
             appearance: none;
@@ -269,10 +270,10 @@
 
         .progress-bar {
             width: 100%;
-            height: 4px;
+            height: 3px;
             background: rgba(212, 147, 157, 0.2);
             border-radius: 2px;
-            margin-top: 15px;
+            margin-top: 10px;
             cursor: pointer;
             position: relative;
             overflow: hidden;
@@ -289,8 +290,8 @@
         .time-display {
             display: flex;
             justify-content: space-between;
-            margin-top: 5px;
-            font-size: 10px;
+            margin-top: 4px;
+            font-size: 9px;
             color: #c4a4a8;
         }
     </style>
@@ -411,9 +412,9 @@
             note.textContent = musicNotes[Math.floor(Math.random() * musicNotes.length)];
             
             const angle = Math.random() * Math.PI * 2;
-            const radius = 120;
-            const startX = Math.cos(angle) * radius + 140;
-            const startY = Math.sin(angle) * radius + 140;
+            const radius = 80;
+            const startX = Math.cos(angle) * radius + 90;
+            const startY = Math.sin(angle) * radius + 90;
             
             note.style.left = startX + 'px';
             note.style.top = startY + 'px';
